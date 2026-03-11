@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Auction Platform</title>
-    <link rel="stylesheet" href="style.css">
+<title>Auction Bidding Platform</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <h1>Online Auction Bidding Platform</h1>
 
+<div class="nav">
 <a href="login.html">Login</a>
+<a href="admin.html">Admin Panel</a>
+</div>
 
-<h2>Active Auctions</h2>
+<h2 style="text-align:center;margin-top:30px;">Active Auctions</h2>
+
+<div class="container">
 
 <div class="auction">
-    <h3>Sample Item</h3>
-    <p>Current Bid: ₹500</p>
-    <button>Place Bid</button>
+<h3>iPhone 15</h3>
+<IMG SRC="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcCE39wWo0cwDGghLHkKlyT4gkGuHR3SF5QjWPdAXsMqPtN5JMS_vLXYPMyyqy1ugPbeMmy1ooPJPOyy7rdsh05GrGB4oocUF6heJxO4AmHfhDDQXnAzOeqNbehZk6OI6_t1WzAN-6G4bFAJF2hGlSO2RzCNmvKnKVsbCVoZwZdRJse_F-SEy3C6FDRS8/s1234/11-photoutils.com_.jpeg.jpg" height="170" width="250">
+<p>Auction Ends In: <span id="timer1">60</span> seconds</p>
+
+<p>Current Bid: ₹ <span id="bid1">50000</span></p>
+
+<input type="number" id="userBid1" placeholder="Enter your bid">
+
+<br><br>
+
+<button onclick="placeBid(1)">Place Bid</button>
+
 </div>
+<div class="auction">
+<h3>Gaming Laptop</h3>
+<img src="https://th.bing.com/th/id/OIP.zMPUnMU7ASu352_eIb52sgHaE9?w=260&h=180&c=7&r=0&o=7&dpr=1.6&pid=1.7&rm=3" heigh="250" width="250">
+<p>Auction Ends In: <span id="timer2">60</span> seconds</p>
+<p>Current Bid: ₹ <span id="bid2">70000</span></p>
+
+<input type="number" id="userBid2" placeholder="Enter your bid">
+
+<br><br>
+
+<button onclick="placeBid(2)">Place Bid</button>
+
+</div>
+
+</div>
+<script src="script.js"></script>
 
 </body>
 </html>
