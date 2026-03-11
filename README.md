@@ -1,7 +1,3 @@
-#Auction Bidding Platform
+# Auction Bidding Platform
 
-This project will be an online auction platform where users can bid on items.
-
-Built for CodeBidz Hackathon.
-
-Project development in progress.
+This project is an online auction platform built for CodeBidz Hackathon.
